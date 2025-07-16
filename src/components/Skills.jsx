@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Skills.css";
+import "./skills.css";
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState("Technical Skills");

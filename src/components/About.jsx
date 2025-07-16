@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Github, Linkedin, Instagram, Facebook } from "lucide-react";
 import Skills from "./Skills";
 import Journey from "./Journey";
-import "./About.css";
+import "./about.css";
 import Ranking from "./Ranking";
 
 const About = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Certifications.css";
+import "./certifications.css";
 
 const certificates = [
   {

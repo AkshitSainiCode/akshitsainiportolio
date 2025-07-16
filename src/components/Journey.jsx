@@ -1,5 +1,5 @@
 import React from "react";
-import "./Journey.css";
+import "./journey.css";
 import { GraduationCap } from "lucide-react";
 
 const Journey = () => {

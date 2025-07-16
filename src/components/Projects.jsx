@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css";
+import "./projects.css";
 import { Code } from "lucide-react";
 import MyPortfolioImg from "../assets/My_Portfolio_project.png";
 

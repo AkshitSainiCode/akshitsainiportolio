@@ -13,7 +13,7 @@ import {
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 import ThemeToggle from "./ThemeToggle";
-import "./Header.css";
+import "./header.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

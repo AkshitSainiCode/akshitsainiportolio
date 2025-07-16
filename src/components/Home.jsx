@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Github, Linkedin, Instagram, Facebook } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
-import "./Home.css";
+import "./home.css";
 import About from "./About";
 import Projects from "./Projects";
 import Resume from "./Resume";
