@@ -1,0 +1,109 @@
+.certificates-section {
+  background-color: #000; /* black background for dark mode */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Light mode styles for the certificates section */
+[data-theme="light"] .certificates-section {
+  background-color: white; /* Light grey background for light mode */
+}
+
+.certificates-title {
+  font-size: 3rem;
+  color: #a855f7; /* Vibrant violet for dark mode */
+  font-weight: 800;
+  margin-bottom: 3rem;
+  margin-top: 27px;
+}
+
+/* Light mode styles for the certificates title */
+[data-theme="light"] .certificates-title {
+  color: #667eea; /* A vibrant blue/purple for light mode */
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.certificate-card {
+  background: #1e1e1e; /* Dark background for dark mode */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05); /* Subtle white shadow for dark mode */
+  max-width: 360px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Light mode styles for the certificate card */
+[data-theme="light"] .certificate-card {
+  background: #ffffff; /* White background for light mode */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Darker shadow for light mode */
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08); /* Dark mode hover shadow */
+}
+
+/* Light mode hover shadow */
+[data-theme="light"] .certificate-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 0.75rem;
+  background-color: #111827; /* Dark background for image container in dark mode */
+  padding: 0.5rem;
+}
+
+/* Light mode styles for the certificate image background */
+[data-theme="light"] .certificate-img {
+  background-color: #e0e4eb; /* Lighter background for image container in light mode */
+}
+
+.certificate-info {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.certificate-link {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #60a5fa; /* blue-400 - generally looks good in both themes */
+}
+
+/* You might want to subtly adjust the link color for light mode if it clashes with the background too much */
+/* [data-theme="light"] .certificate-link {
+    color: #3b82f6;
+} */
+
+.certificate-title {
+  font-size: 1.1rem;
+  color: #fcd34d; /* yellow-300 for dark mode */
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+/* Light mode styles for the certificate title */
+[data-theme="light"] .certificate-title {
+  color: #333; /* Darker text for light mode */
+}
+
+.certificate-platform {
+  font-size: 1rem;
+  color: #d1d5db; /* Light grey for dark mode */
+  font-weight: 600;
+}
+
+/* Light mode styles for the certificate platform text */
+[data-theme="light"] .certificate-platform {
+  color: #555; /* Medium grey for light mode */
+}

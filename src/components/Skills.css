@@ -1,0 +1,253 @@
+.skills-section {
+  background-color: #0f0f0f;
+  color: #fefefe;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: 2px;
+  min-height: 100vh;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.skills-header {
+  margin-bottom: 3rem;
+}
+
+.skills-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fde68a;
+  margin-bottom: 1rem;
+}
+
+.skills-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skill-tab {
+  background-color: #6d28d9;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.skill-tab:hover {
+  background-color: #5b21b6;
+  transform: translateY(-2px);
+}
+
+.skill-tab.active {
+  background-color: #facc15;
+  color: #1f1f1f;
+  transform: scale(1.05);
+}
+
+.skills-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  color: #fcd34d;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  background-color: #2a2a2a;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.skill-percent {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 200px;
+  height: 6px;
+  background-color: #333;
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 6px;
+  border-radius: 3px;
+  transition: width 0.8s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.tool-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.skills-stats {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.skills-stats-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fde68a;
+  margin-bottom: 1.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.coming-soon {
+  font-size: 1.2rem;
+  color: #999;
+  margin: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-heading {
+    font-size: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .skill-percent {
+    font-size: 2rem;
+  }
+
+  .tool-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skills-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-tab {
+    width: 200px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Light mode override */
+[data-theme="light"] .skills-section {
+  background-color: white;
+  color: #222;
+}
+
+[data-theme="light"] .skills-title {
+  color: #6b21a8;
+}
+
+[data-theme="light"] .skills-heading {
+  color: #7c3aed;
+}
+
+[data-theme="light"] .skill-card {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+[data-theme="light"] .skill-card:hover {
+  background-color: #e9ecef;
+}
+
+[data-theme="light"] .progress-bar {
+  background-color: #e9ecef;
+}
+
+[data-theme="light"] .skills-stats {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+[data-theme="light"] .skills-stats-title {
+  color: #6b21a8;
+}
+
+[data-theme="light"] .stat-label {
+  color: #666;
+}
