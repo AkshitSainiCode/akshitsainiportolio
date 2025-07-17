@@ -32,6 +32,45 @@ body {
   position: relative;
 }
 
+.heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #ffffff;
+  word-break: break-word;
+  text-align: left;
+}
+
+[data-theme="light"] .heading {
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+}
+
 .home-content {
   display: flex;
   flex-direction: column;

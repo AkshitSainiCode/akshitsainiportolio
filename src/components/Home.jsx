@@ -66,15 +66,12 @@ const Home = () => {
         <div className="home-container">
           <div className="home-content">
             <div className="greeting-section">
-              <h3
-                style={{ paddingBottom: 15, fontSize: "90px" }}
-                className="heading"
-              >
+              <h1 className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-label="wave">
                   👋🏻
                 </span>
-              </h3>
+              </h1>
 
               <div className="intro-text">
                 <p className="intro-line">
