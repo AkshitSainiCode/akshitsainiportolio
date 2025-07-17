@@ -4,24 +4,27 @@
   padding: 4rem 1rem;
   text-align: center;
   min-height: 100vh;
+  position: relative;
 }
 
 [data-theme="light"] .resume-section {
-  background-color: white;
+  background-color: #fff;
 }
 
+/* Resume Title */
 .resume-title {
   font-size: 3rem;
   font-weight: 800;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   color: #a855f7;
-  margin-top: 27px;
 }
 
 [data-theme="light"] .resume-title {
   color: #667eea;
 }
 
+/* Resume Preview Container */
 .resume-container {
   display: flex;
   justify-content: center;
@@ -30,6 +33,35 @@
   margin-bottom: 2rem;
 }
 
+/* Resume Image Styling */
+.resume-image {
+  margin: 2rem;
+  max-width: 90%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark Mode Hover: top and bottom purple shadow */
+.resume-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 -15px 35px rgba(168, 85, 247, 0.35),
+    0 15px 35px rgba(168, 85, 247, 0.35);
+}
+
+/* Light Mode: base shadow */
+[data-theme="light"] .resume-image {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Light Mode Hover: top and bottom blue shadow */
+[data-theme="light"] .resume-image:hover {
+  box-shadow: 0 -15px 35px rgba(102, 126, 234, 0.3),
+    0 15px 35px rgba(102, 126, 234, 0.3);
+}
+
+/* Optional PDF iframe */
 .resume-iframe {
   width: 80%;
   height: 80vh;
@@ -41,6 +73,7 @@
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
 
+/* Download Buttons */
 .resume-buttons {
   display: flex;
   justify-content: center;
@@ -51,23 +84,28 @@
 .download-button {
   padding: 0.75rem 1.5rem;
   background-color: #3b82f6;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .download-button:hover {
   background-color: #2563eb;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .resume-iframe {
     width: 95%;
     height: 65vh;
+  }
+
+  .resume-image {
+    width: 95%;
   }
 }
 

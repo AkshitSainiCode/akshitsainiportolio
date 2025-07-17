@@ -30,13 +30,10 @@ const Skills = () => {
 
   const tools = [
     { name: "Visual Studio Code", icon: "💻", color: "#007acc" },
-    { name: "PyCharm", icon: "🐍", color: "#21d789" },
-    { name: "Git", icon: "🔀", color: "#f14e32" },
-    { name: "GitHub", icon: "🐱", color: "#181717" },
-    { name: "Windows", icon: "🪟", color: "#0078d4" },
-    { name: "PostgreSQL", icon: "🐘", color: "#336791" },
-    { name: "Figma", icon: "🎨", color: "#f24e1e" },
-    { name: "Chrome", icon: "🌐", color: "#4285f4" },
+    { name: "GitHub", icon: "🐱", color: "#594444ff" },
+    { name: "Node.js", icon: "🟢", color: "#339933" },
+    { name: "MySQL Workbench", icon: "🐬", color: "#00758F" },
+    { name: "Bootstrap", icon: "🅱️", color: "#7952B3" },
   ];
 
   useEffect(() => {
@@ -132,7 +129,7 @@ const Skills = () => {
 
         {renderContent()}
 
-        <div className="skills-stats">
+        {/* <div className="skills-stats">
           <h3 className="skills-stats-title">Quick Stats</h3>
           <div className="stats-grid">
             <div>
@@ -154,7 +151,7 @@ const Skills = () => {
               <div className="stat-label">Tools & Platforms</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -31,25 +31,45 @@ const Header = () => {
       icon: <Award size={20} />,
     },
     { path: "/blogs", label: "Blogs", icon: <BookOpen size={20} /> },
-    { path: "/github", label: "GitHub", icon: <Github size={20} /> },
+    {
+      path: "https://github.com/AkshitSainiCode",
+      label: "GitHub",
+      icon: <Github size={20} />,
+      external: true,
+      target: "_blank",
+    },
   ];
 
   return (
     <header className="header">
       <div className="header-container">
         <div className="logo-section">
-          <h1 className="logo-text">AKSHIT SAINI</h1>
+          <Link to="/" className="logo-link">
+            <h1 className="logo-text">AKSHIT SAINI</h1>
+          </Link>
         </div>
 
         {/* Desktop Nav */}
         <nav className="desktop-nav">
           <ul className="nav-list">
-            {navItems.map(({ path, label, icon }) => (
+            {navItems.map(({ path, label, icon, external, target }) => (
               <li key={label} className="nav-item">
-                <Link to={path} className="nav-link">
-                  {icon}
-                  <span>{label}</span>
-                </Link>
+                {external ? (
+                  <a
+                    href={path}
+                    target={target || "_blank"}
+                    rel="noopener noreferrer"
+                    className="nav-link"
+                  >
+                    {icon}
+                    <span>{label}</span>
+                  </a>
+                ) : (
+                  <Link to={path} className="nav-link">
+                    {icon}
+                    <span>{label}</span>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -69,12 +89,25 @@ const Header = () => {
       {isMenuOpen && (
         <nav className="mobile-nav">
           <ul className="mobile-nav-list">
-            {navItems.map(({ path, label, icon }) => (
+            {navItems.map(({ path, label, icon, external, target }) => (
               <li key={label}>
-                <Link to={path} onClick={toggleMenu}>
-                  {React.cloneElement(icon, { size: 18 })}
-                  <span>{label}</span>
-                </Link>
+                {external ? (
+                  <a
+                    href={path}
+                    target={target || "_blank"}
+                    rel="noopener noreferrer"
+                    className="nav-link"
+                    onClick={toggleMenu}
+                  >
+                    {React.cloneElement(icon, { size: 18 })}
+                    <span>{label}</span>
+                  </a>
+                ) : (
+                  <Link to={path} className="nav-link" onClick={toggleMenu}>
+                    {React.cloneElement(icon, { size: 18 })}
+                    <span>{label}</span>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

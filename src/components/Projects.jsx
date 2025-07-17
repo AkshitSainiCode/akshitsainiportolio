@@ -2,6 +2,7 @@ import React from "react";
 import "./projects.css";
 import { Code } from "lucide-react";
 import MyPortfolioImg from "../assets/My_Portfolio_project.png";
+import VoiceAssistant from "../assets/VoiceAssistant.png";
 
 const projects = [
   {
@@ -14,22 +15,21 @@ const projects = [
   },
   {
     id: 2,
-    title: "Heart Disease Prediction",
+    title: "Voice Assistant App for Visually Impaired",
     description:
-      "Predict heart disease using ML models with Scikit-learn and healthcare data.",
-    technologies: ["Pandas", "Matplotlib", "Scikit-Learn"],
-    image:
-      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop",
+      "A voice-activated assistant built with React Native and Node.js to help visually impaired users perform tasks like sending emails, reading messages, and accessing information using speech recognition and text-to-speech.",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+    image: VoiceAssistant,
   },
-  {
-    id: 3,
-    title: "Online Payroll Management System",
-    description:
-      "An online payroll system that tracks attendance, leave, and generates reports.",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
-  },
+  // {
+  //   id: 3,
+  //   title: "Online Payroll Management System",
+  //   description:
+  //     "An online payroll system that tracks attendance, leave, and generates reports.",
+  //   technologies: ["React", "Node.js", "Express", "MongoDB"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
+  // },
   // {
   //   id: 4,
   //   title: "Shoppy Ecommerce",

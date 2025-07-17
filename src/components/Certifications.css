@@ -24,9 +24,11 @@
 
 .certificates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   justify-items: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .certificate-card {
@@ -106,4 +108,13 @@
 /* Light mode styles for the certificate platform text */
 [data-theme="light"] .certificate-platform {
   color: #555; /* Medium grey for light mode */
+}
+
+.certificates-section {
+  padding: 4rem 1rem;
+}
+@media (min-width: 768px) {
+  .certificates-section {
+    padding: 4rem 2rem;
+  }
 }

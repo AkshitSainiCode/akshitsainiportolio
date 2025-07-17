@@ -11,7 +11,7 @@ const Footer = () => {
         </p>
         <div className="footer-icons">
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/AkshitSainiCode"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -19,7 +19,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/your-username"
+            href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"

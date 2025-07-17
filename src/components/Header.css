@@ -48,6 +48,14 @@
   font-weight: 700;
   color: inherit;
 }
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
 
 /* Desktop Nav */
 .desktop-nav {
